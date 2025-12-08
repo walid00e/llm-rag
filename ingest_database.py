@@ -30,6 +30,7 @@ def create_vector_db():
         length_function=len,
         add_start_index=True,
     )
+
     chunks = text_splitter.split_documents(documents)
     print(f"--> Split into {len(chunks)} text chunks.")
 
