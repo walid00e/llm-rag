@@ -85,7 +85,7 @@ with st.sidebar.expander("Documents List", expanded=False):
     if response.status_code == 200:
         docs = response.json().get("documents", [])
         for doc in docs:
-            st.text(f"📄 {doc.split("_")[1]}")
+            st.text(f"📕 {doc.split("_")[1]}")
 
 with st.sidebar.expander("Chat Controls"):
     if st.button("Clear Chat History", use_container_width=True):
